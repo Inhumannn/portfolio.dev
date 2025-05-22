@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --ft-title: "Playfair Display", serif;
+  --ft-main: "Inter", sans-serif;
+
+  --fz-logo: clamp(20px, 9vw, 32px);
+  --fw-title: normal;
+  --fz-title2: clamp(32px, 5vw, 36px);
+  --fz-title3: clamp(24px, 4vw, 24px);
+  --fz-main: clamp(14px, 2vw, 18px);
+  --fz-other: clamp(14px, 2vw, 16px);
+
+  --space-xs: 15px 15px;
+  --space-sm: 30px 15px;
+  --space-md: ;
+  --space-lg: ;
+
+  --clr-logo: #2d3047;
+  --clr-main: #000000;
+  --clr-second: #ffffff;
+  --clr-third: #d1d5db;
+  --clr-nav: #333333;
+  --clr-link: #419d78;
+  --clr-background: #2d3047;
+  --clr-content: #9ca3af;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--ft-title);
+  font-weight: var(--fw-title);
+}
+
+h1 {
+  color: var(--clr-logo);
+  font-size: var(--fz-logo);
+}
+
+h2 {
+  font-size: var(--fz-title2);
+}
+
+h3 {
+  font-size: var(--fz-title3);
+}
+
+p {
+  font-family: var(--ft-main);
+  font-size: var(--fz-main);
+}
+
+a {
+  font-family: var(--ft-main);
+  text-decoration: none;
+  color: var(--main-color);
+}
+.fa-linkedin-in,
+.fa-github,
+.fa-basketball {
+  background-color: #424559;
+  padding: 10px;
+  border-radius: 9999px;
+}
+
+header {
+  max-width: 1536px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-xs);
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 3vh;
+    a {
+      color: var(--color-logo);
+    }
+  }
+}
+
+footer {
+  background-color: var(--clr-background);
+  color: var(--clr-second);
+
+  > div {
+    max-width: 1536px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-sm);
+
+    div:nth-child(1) {
+      h2 {
+        font-size: var(--fz-logo);
+        padding-bottom: 5px;
+      }
+      p {
+        font-size: var(--fz-other);
+        color: var(--clr-content);
+      }
+    }
+    div:nth-child(2) {
+      .social {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-bottom: 12px;
+        gap: 4vh;
+        .fa-basketball {
+          padding: 10px 11px;
+        }
+      }
+      p {
+        font-size: var(--space-xs);
+        color: var(--clr-content);
+      }
+    }
+  }
+}
