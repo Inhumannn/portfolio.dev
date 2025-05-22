@@ -1,0 +1,80 @@
+@media screen and (max-width: 1024px) {
+  #skills {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    ul {
+      display: none;
+    }
+    #bars {
+      display: block;
+      cursor: pointer;
+    }
+  }
+  footer {
+    > div {
+      flex-direction: column;
+      gap: 30px;
+      .social {
+        justify-content: center;
+      }
+    }
+  }
+  #home {
+    #presentation {
+      > div {
+        grid-template-columns: repeat(1, 1fr) !important;
+
+        #photo {
+          display: none;
+        }
+
+        #res-tel {
+          display: flex;
+          align-items: baseline;
+          gap: 26px;
+
+          #photo-vtel {
+            display: block;
+            width: var(--fz-img-presentation);
+            border-radius: 100%;
+            background-color: white;
+            padding: 0.5vh;
+            align-self: center;
+          }
+        }
+      }
+    }
+
+    #about {
+      > div {
+        grid-template-columns: repeat(1, 1fr) !important;
+        gap: 50px;
+      }
+    }
+
+    #course {
+      padding: 0 !important;
+    }
+
+    #project {
+      #container-project {
+        grid-template-columns: repeat(1, 1fr) !important;
+
+        .project-skills {
+          flex-wrap: wrap;
+        }
+      }
+    }
+    #contact {
+      form {
+        > div:nth-child(1) {
+          grid-template-columns: repeat(1, 1fr) !important;
+        }
+      }
+    }
+  }
+}
