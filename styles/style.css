@@ -12,7 +12,9 @@
   --ft-main: "Inter", sans-serif;
 
   --fz-logo: clamp(20px, 9vw, 32px);
+  --fz-img-presenation: clamp(20px, 9vw, 248px);
   --fw-title: normal;
+  --fz-title: clamp(32px, 5vw, 60px);
   --fz-title2: clamp(32px, 5vw, 36px);
   --fz-title3: clamp(24px, 4vw, 24px);
   --fz-main: clamp(14px, 2vw, 18px);
@@ -68,7 +70,7 @@ a {
 .fa-basketball {
   background-color: #424559;
   padding: 10px;
-  border-radius: 9999px;
+  border-radius: 100%;
 }
 
 header {
@@ -125,6 +127,52 @@ footer {
         font-size: var(--space-xs);
         color: var(--clr-content);
       }
+    }
+  }
+}
+#home {
+  #presentation {
+    background-image: url("/img/background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 650px;
+    color: var(--clr-second);
+    display: flex;
+    > div {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      padding: var(--space-xs);
+      max-width: 1536px;
+      margin: auto;
+      div:nth-child(1) {
+        h2 {
+          font-size: var(--ft-title);
+        }
+      }
+
+      div:nth-child(2) {
+        text-align: center;
+        img {
+          width: var(--fz-img-presenation);
+          border-radius: 100%;
+          background-color: white;
+          padding: 3px;
+        }
+      }
+    }
+  }
+  #about {
+    max-width: 1558px;
+    margin: auto;
+    h2 {
+      text-align: center;
+    }
+    > div {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
