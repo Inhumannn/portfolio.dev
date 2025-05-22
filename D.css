@@ -79,11 +79,6 @@ label {
   padding-bottom: 6px;
 }
 
-.active {
-  color: var(--clr-link);
-  font-weight: bold;
-}
-
 #bars {
   display: none;
 }
