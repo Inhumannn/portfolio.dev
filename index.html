@@ -23,7 +23,7 @@
         <div>
           <div>
             <h2>Thomas Dev</h2>
-            <p>Développeuse Web Front-End & Designer UI/UX</p>
+            <p>Développeur Web Front-End & Designer UI/UX</p>
             <p>
               Je crée des expériences web élégantes, intuitives et performantes
               avec une attention particulière aux détails.
@@ -38,7 +38,7 @@
       <section id="about">
         <h2>À propos de moi</h2>
         <div>
-          <div>
+          <div id="course">
             <h3>Mon parcours</h3>
             <p>
               Diplômée en développement web et design d'interface, je combine
@@ -59,46 +59,50 @@
             <a href="#">En savoir plus sur mon parcours →</a>
           </div>
           <div>
-            <h2>Mes compétences</h2>
-            <div>
+            <h3>Mes compétences</h3>
+            <div id="skills">
               <div>
-                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-html5 skill"></i>
                 <p>HTML5</p>
               </div>
               <div>
-                <i class="fa-brands fa-css3"></i>
+                <i class="fa-brands fa-css3 skill"></i>
                 <p>CSS3</p>
               </div>
               <div>
-                <i class="fa-brands fa-square-js"></i>
+                <i class="fa-brands fa-square-js skill"></i>
                 <p>JavaScript</p>
               </div>
               <div>
-                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-react skill"></i>
                 <p>JavaScript</p>
               </div>
               <div>
-                <i class="fa-regular fa-circle"></i>
+                <i class="fa-regular fa-circle skill"></i>
                 <p>JavaScript</p>
               </div>
               <div>
-                <i class="fa-regular fa-circle"></i>
+                <i class="fa-regular fa-circle skill"></i>
                 <p>JavaScript</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section>
+      <section id="project">
         <h2>Mes projets récents</h2>
         <p>
           Découvrez une sélection de mes travaux récents qui démontrent mes
+          <br />
           compétences en développement web et design d'interface.
         </p>
-        <div>
-          <a href="#">
-            <article>
-              <img src="" alt="E-commerce Élégance" />
+        <div id="container-project">
+          <article class="card">
+            <a href="#">
+              <img
+                src="img/project/ecommerce-elegance.jpg"
+                alt="E-commerce Élégance"
+              />
               <h3>E-commerce Élégance</h3>
               <p>
                 Conception et développement d'une boutique en ligne pour une
@@ -108,12 +112,15 @@
               <div>
                 <p>HTML5</p>
               </div>
-            </article>
-            <a href="#">Voir le projet →</a>
-          </a>
-          <a href="#">
-            <article>
-              <img src="" alt="E-commerce Élégance" />
+              <a href="#">Voir le projet →</a>
+            </a>
+          </article>
+          <article class="card">
+            <a href="#">
+              <img
+                src="img/project/dashboard-analytics-pro.jpg"
+                alt="E-commerce Élégance"
+              />
               <h3>E-commerce Élégance</h3>
               <p>
                 Conception et développement d'une boutique en ligne pour une
@@ -123,27 +130,38 @@
               <div>
                 <p>HTML5</p>
               </div>
-            </article>
-            <a href="#">Voir le projet →</a>
-          </a>
+              <a href="#">Voir le projet →</a>
+            </a>
+          </article>
         </div>
         <a href="#">Voir tous les projets</a>
       </section>
-      <section>
+      <section id="contact">
         <h2>Contactez-moi</h2>
         <p>
           Vous avez un projet en tête ou une question ? N'hésitez pas à me
-          contacter, je vous répondrai dans les plus brefs délais.
+          contacter, je <br />
+          vous répondrai dans les plus brefs délais.
         </p>
         <form action="#">
-          <label for="name">Name:</label>
-          <input type="text" name="name" id="name" />
-          <label for="email">email:</label>
-          <input type="text" name="email" id="email" />
-          <label for="object"></label>
-          <textarea name="object" id="object"></textarea>
-          <input type="checkbox" name="checkbox" id="checkbox" />
-          <label for="checkbox"></label>
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" />
+            <label for="email">email:</label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div>
+            <label for="object"></label>
+            <textarea name="object" id="object"></textarea>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" id="checkbox" required />
+            <label for="checkbox"
+              >J'accepte que mes données soient traitées conformément à la
+              politique deconfidentialité. Elles ne seront utilisées que pour
+              répondre à ma demande.</label
+            >
+          </div>
           <a href="#">Envoyer le message</a>
         </form>
       </section>
