@@ -89,6 +89,13 @@ a {
   padding: 8px 12px;
   border-radius: 8px;
 }
+.submit2 {
+  max-width: max-content;
+  background-color: var(--clr-background-footer);
+  color: var(--clr-second);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
 .link {
   color: var(--clr-link);
 }
@@ -246,9 +253,10 @@ footer {
     padding: var(--space-md);
     background-color: var(--clr-background-section);
 
-    h2,
-    p {
+    > h2,
+    > p {
       text-align: center;
+      padding-bottom: 17px;
     }
 
     #container-project {
@@ -257,10 +265,31 @@ footer {
       gap: 3vh;
 
       .card {
+        background-color: var(--clr-second);
+        border-radius: 8px;
         img {
           width: 100%;
+          height: 256px;
+          object-fit: cover;
+          border-radius: 8px 8px 0 0;
+        }
+        > div {
+          padding: 7px 10px;
+        }
+        .project-skills {
+          display: flex;
+          gap: 20px;
+          > p:nth-child(n + 1) {
+            background-color: #f3f4f6;
+            padding: 8px 12px;
+            border-radius: 8px;
+          }
         }
       }
+    }
+    div:nth-child(4) {
+      text-align: center;
+      padding: 50px 0 25px 0;
     }
   }
   #contact {
@@ -276,9 +305,21 @@ footer {
     form {
       max-width: 672px;
       margin: auto;
+      padding: var(--space-sm);
       background-color: var(--clr-background-section);
       display: flex;
       flex-direction: column;
+      > div:nth-child(1) {
+        display: flex;
+        > div {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      > div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 }
