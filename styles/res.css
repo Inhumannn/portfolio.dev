@@ -13,6 +13,9 @@
       display: block;
       cursor: pointer;
     }
+    #res-menu {
+      display: none;
+    }
   }
   footer {
     > div {

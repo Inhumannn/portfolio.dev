@@ -1,0 +1,22 @@
+[
+  {
+    "title": "E-commerce Élégance",
+    "image": {
+      "src": "img/project/ecommerce-elegance.jpg",
+      "alt": "E-commerce Élégance"
+    },
+    "description": "Conception et développement d'une boutique en ligne pour une marque de vêtements haut de gamme, avec une interface élégante et une expérience d'achat fluide.",
+    "skills": ["HTML5", "CSS3", "JavaScript", "Responsive"],
+    "projectLink": "#"
+  },
+  {
+    "title": "E-commerce Élégance",
+    "image": {
+      "src": "img/project/dashboard-analytics-pro.jpg",
+      "alt": "E-commerce Élégance"
+    },
+    "description": "Conception et développement d'une boutique en ligne pour une marque de vêtements haut de gamme, avec une interface élégante et une expérience d'achat fluide.",
+    "skills": ["HTML5", "CSS3", "Data Viz", "UX Design"],
+    "projectLink": "#"
+  }
+]
