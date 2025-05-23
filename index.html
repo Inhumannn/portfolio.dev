@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/main.css" />
     <title>Portfolio - Accueil</title>
   </head>
   <body>
@@ -11,10 +11,10 @@
       <h1>Thomas.dev</h1>
       <nav>
         <ul>
-          <li><a href="#" class="active">Accueil</a></li>
-          <li><a href="#">À propos</a></li>
-          <li><a href="#">Projets</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="project.html">Projets</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="fa-solid fa-bars" id="bars"></i>
       </nav>
@@ -38,7 +38,7 @@
               Je crée des expériences web élégantes, intuitives et performantes
               avec une attention particulière aux détails.
             </p>
-            <a href="#" class="submit1">Voir mes projets</a>
+            <a href="#" class="btn-primary">Voir mes projets</a>
           </div>
           <div>
             <img
@@ -159,7 +159,7 @@
           </article>
         </div>
         <div>
-          <a href="#" class="submit2">Voir tous les projets</a>
+          <a href="#" class="btn-secondary">Voir tous les projets</a>
         </div>
       </section>
       <section id="contact">
@@ -172,17 +172,17 @@
         <form action="#">
           <div>
             <div>
-              <label for="name">Name:</label>
+              <label for="name">Name</label>
               <input type="text" name="name" id="name" />
             </div>
             <div>
-              <label for="email">Email:</label>
+              <label for="email">Email</label>
               <input type="text" name="email" id="email" />
             </div>
           </div>
           <div>
-            <label for="object">Message: </label>
-            <textarea name="object" id="object"></textarea>
+            <label for="object">Message</label>
+            <textarea name="object" id="object" rows="10"></textarea>
           </div>
           <div>
             <input type="checkbox" name="checkbox" id="checkbox" required />
@@ -192,7 +192,7 @@
               répondre à ma demande.</label
             >
           </div>
-          <a href="#" class="submit1">Envoyer le message</a>
+          <a href="#" class="btn-primary">Envoyer le message</a>
         </form>
       </section>
     </main>
