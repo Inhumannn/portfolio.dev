@@ -140,10 +140,6 @@ label {
   display: none;
 }
 
-#res-menu {
-  display: flex;
-}
-
 header {
   max-width: 1536px;
   margin: auto;
