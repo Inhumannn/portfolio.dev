@@ -17,6 +17,11 @@
       display: none;
     }
   }
+  #container-presentation {
+    > div:nth-child(1) > p {
+      padding: 12px 0 16px;
+    }
+  }
   footer {
     > div {
       flex-direction: column;

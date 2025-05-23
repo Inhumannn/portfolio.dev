@@ -170,6 +170,7 @@
 
   h2,
   p {
+    padding-bottom: 17px;
     text-align: center;
   }
 
@@ -342,6 +343,7 @@
 
     h2,
     p {
+      padding-bottom: 17px;
       text-align: center;
     }
 

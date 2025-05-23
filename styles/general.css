@@ -12,7 +12,7 @@
   --ft-main: "Inter", sans-serif;
 
   --fz-logo: clamp(1.25rem, 4vw, 2rem);
-  --fz-img-presentation: clamp(5rem, 18vw, 15.5rem);
+  --fz-img-presentation: clamp(4rem, 18vw, 15.5rem);
   --fz-skill: clamp(2rem, 4vw, 2.25rem);
 
   --fw-title: normal;
