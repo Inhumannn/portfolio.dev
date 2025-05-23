@@ -5,7 +5,8 @@ barsMenu.addEventListener("click", () => {
   ulMenu.style.display = ulMenu.style.display === "flex" ? "none" : "flex";
   ulMenu.style.position = "absolute";
   ulMenu.style.background = "white";
-  ulMenu.style.margin = "-12px -86%";
+  ulMenu.style.left = "clamp(15px, 2vw, 80px)";
+  ulMenu.style.top = "clamp(10px, 1vh, 40px)";
   ulMenu.style.padding = "12px 0";
   ulMenu.style.gap = "20px";
 
